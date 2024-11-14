@@ -1,0 +1,28 @@
+{
+  "name": "oxydev/sylius-kalviyo-plugin",
+  "description": "A plugin for integrating Kalviyo with Sylius.",
+  "license": "MIT",
+  "type": "sylius-plugin",
+  "keywords": [
+    "sylius",
+    "sylius-plugin"
+  ],
+  "require": {
+    "php": "^8.0",
+    "symfony/framework-bundle": "^5.0|^6.0",
+    "sylius/sylius": "^1.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "Oxydev\\SyliusKalviyoPlugin\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Oxydev\\SyliusInvoicePlugin\\": "tests/"
+    },
+    "classmap": [
+      "tests/Application/Kernel.php"
+    ]
+  }
+}
